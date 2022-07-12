@@ -200,3 +200,21 @@ em {
   }
 
 }
+
+.button{
+  background-color: rgb(163, 33, 96);
+  text-align: center;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.homebutton {
+  font-size: 25px;
+}
+
+JDEHeader {
+  font-size: 60px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
