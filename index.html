@@ -8,63 +8,53 @@
         </title>
         <link rel="stylesheet" href="style/style.css" class="css">
         <meta version = "1.0.0">
-        <link rel="icon" href="DIP.png">
+        <link rel="icon" href="images/DIP.svg">
     </head>
     <body>
-        <header>
-            <span class="logo">
-                <a href="index.html">
-                    <img src="DIP.png">
-                </a>
-            </span>
-            <div>
-                <ul>
-                    <li>
-                        <a href="index.html" class="active">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="docs.html" class="active">
-                            Docs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="news.html" class="active">
-                            News
-                        </a>
-                    </li>
-                </ul>
+        <div class="sticky-header">
+            <div class="sticky-header">
+                <div class="logo">
+                    <a href="./index.html">
+                        <svg class="logo">
+                            <image href="./images/DIP.svg" width=10vw height=10vh>
+                            </image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navText">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="./docs/docs.html">
+                        Docs
+                    </a>
+                </div>
             </div>
-        </header>
-        <hr>
-        <JDEHeader>
-            <center class="title">
-                DIP: Development In Progress
-            </center>
-        </JDEHeader>
-        <hr>
-        <!-- https://github.com/Moosems/moosems.github.io/blob/main/bg.png?raw=true -->
-        <div>
-            <style>
-                h1 {
-                    font-size: 200%;
-                    text-align: justify;
-                    text-justify: inter-word;
-                }
-            </style>
-            <h1>
-                <center>
-                    DIP is a completely open-source, free, and hackable IDE, written in Python. 
-                </center>
-            </h1>
         </div>
-        <center>
-            <a href="docs.html">
-                <button class="button homebutton">
-                    Go to Docs
-                </button>
-            </a>
-        </center>
+        <div class="center-parent">
+            <div class="left"></div>
+            <div class="mid">
+                <h1>
+                    DIP: Development In Progress
+                </h1>
+                <hr>
+                <h2>
+                    A Completely Customizable Code Editor
+                </h2>
+                <img src="./images/screenshot.png" width=75% alt="Screenshot of DIP">
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="center-parent">
+            <div class="left"></div>
+            <div class="mid">
+                <a href="./docs/docs.html">
+                    <button class="button homebutton">
+                        Go to Docs
+                    </button>
+                </a>
+            </div>
+            <div class="right"></div>
+        </div>
     </body>
 </html>

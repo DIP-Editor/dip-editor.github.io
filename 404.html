@@ -7,55 +7,42 @@
             DIP Webpage
         </title>
         <link rel="stylesheet" href="style/style.css" class="css">
-        <link rel="icon" href="DIP.png">
+        <link rel="icon" href="DIP.svg">
     </head>
     <body>
-        <header>
-            <span class="logo">
-                <a href="index.html">
-                    <img src="DIP.png">
-                </a>
-            </span>
-            <div>
-                <ul>
-                    <li>
-                        <a href="index.html" class="active">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="docs.html" class="active">
-                            Docs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="news.html" class="active">
-                            News
-                        </a>
-                    </li>
-                </ul>
+        <div class="sticky-header">
+            <div class="sticky-header">
+                <div class="logo">
+                    <a href="./index.html">
+                        <svg class="logo">
+                            <image href="./images/DIP.svg" width=10vw height=10vh>
+                            </image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navText">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="./docs/docs.html">
+                        Docs
+                    </a>
+                </div>
             </div>
-        </header>
-        <hr>
-        <JDEHeader>
-            <center class="title">
-                DIP: Development In Progress
-            </center>
-        </JDEHeader>
-        <hr>
-        <center>
-            <subtitle>
+        </div>
+        <div class="center-parent">
+            <div class="left"></div>
+            <div class="mid">
                 <h1>
-                    The Webpage You Are Looking For Cannot Be Found ¯\_(ツ)_/¯
+                    DIP: Development In Progress
                 </h1>
-            </subtitle>
-        </center>
-        <center>
-            <a href="index.html">
-                <button class="button homebutton">
-                    Go to Homepage
-                </button>
-            </a>
-        </center>
+                <hr>
+                <h1>
+                    A Completely Customizable Code Editor
+                </h1>
+                <img src="./images/screenshot.png" width=75% alt="Screenshot of DIP">
+            </div>
+            <div class="right"></div>
+        </div>
     </body>
 </html>

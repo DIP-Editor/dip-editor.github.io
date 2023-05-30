@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DIP Documentation
+        </title>
+        <link rel="stylesheet" href="../style/style.css" class="css">
+        <link rel="icon" href="../images/DIP.svg">
+    </head>
+    <body>
+        <div class="sticky-header">
+            <div class="sticky-header">
+                <div class="logo">
+                    <a href="../index.html">
+                        <svg class="logo">
+                            <image href="../images/DIP.svg" width=10vw height=10vh>
+                            </image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navText">
+                    <a href="../index.html">
+                    Home
+                    </a>
+                    <a href="./docs.html">
+                    Docs
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="center-parent">
+            <div class="left"></div>
+            <div class="mid">
+                <h1>
+                    DIP: Development In Progress
+                </h1>
+                <hr>
+                <br>
+                <h2>
+                    What is DIP?
+                </h2>
+                <br>
+                <p>
+                    DIP is a text editor designed for efficient programming in the fast-paced world of software development.
+                </p>
+                <br>
+                <h2>
+                    What makes DIP different?
+                </h2>
+                <br>
+                <p>
+                    Unlike other code editors, DIP is lightweight, completely customizable, allows for very easy creation of extensions, is low on CPU consumption, and has a minimal RAM footprint.
+                </p>
+                <br>
+                <h2>
+                    How does the styling work?
+                </h2>
+                <br>
+                <p>
+                    DIP utilizes a few basic <code>.json</code> files for the styling. These files reside in the users app data directory and the files controlling styling are <code>highight.json</code> and <code>master.json</code>. <code>highlight.json</code> controls the styling of individual widgets such as buttons, tooltips, scrollbars, and even the line numbers. It also controls the font used throughout the app, font sizes, and window placement. On the other hand, <code>master.json</code> controls the coloring for the syntax highlighting. In the future, we plan to add a GUI for modifying the apps styling and syntax highlighting. To learn more about the styling, please visit the <a href="./styling.html">styling</a> section of the documentation.
+                </p>
+                <br>
+                <h2>
+                    How do I create an extension?
+                </h2>
+                <br>
+                <p>
+                    DIP extensions are written in Python and are very easy to create. This topic, however, is too large for the overview section of the documentation. For more information on creating extensions, please visit the <a href="./extensions.html">extensions</a> section.
+                </p>
+                <br>
+                <h2>
+                    What is DIP written in?
+                </h2>
+                <br>
+                <p>
+                    DIP is written in Python and utilizes the <code>tkinter</code> library for the GUI, [`pygments`](https://pygments.org/) and [`tree-sitter`](https://tree-sitter.github.io/tree-sitter/) for syntax highlighting, [`pyperclip`](https://github.com/asweigart/pyperclip) for proper copy/paste functionality, [`platformdirs`](https://github.com/platformdirs) for help with file management, [`requests`](https://docs.python-requests.org/en/master/) for dealing with servers and update detection, [`chlorophyll`](https://www.github.com/rdbende/chlorophyll) for help with syntax highlighting, and [`PyInstaller`](https://www.pyinstaller.org/) for creating executables.
+                </p>
+                <h2>
+                    Pages
+                </h2>
+                <ul>
+                    <li>
+                        <a href="./styling.html">Styling</a>
+                    </li>
+                    <li>
+                        <a href="./extensions.html">Extensions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right"></div>
+        </div>
+    </body>
+</html>
