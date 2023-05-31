@@ -1,0 +1,389 @@
+<!-- This is absolutely trash and needs MAJOR work. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DIP Documentation
+        </title>
+        <link rel="stylesheet" href="../style/style.css" class="css">
+        <link rel="icon" href="../images/DIP.svg">
+    </head>
+    <body>
+        <div class="sticky-header">
+            <div class="sticky-header">
+                <div class="logo">
+                    <a href="../index.html">
+                        <svg class="logo">
+                            <image href="../images/DIP.svg" width=10vw height=10vh>
+                            </image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navText">
+                    <a href="../index.html">
+                    Home
+                    </a>
+                    <a href="./docs.html">
+                    Docs
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="center-parent">
+            <div class="left"></div>
+            <div class="mid">
+                <h1 align="center">Using `DIP`</h1>
+                <blockquote>
+                    <div class="text">
+                        <h3>Note:</h3>
+                        <p>
+                            <code>Contmand</code> is the expression used in DIP to refer to the <code>Control</code> key on Windows and Linux and the <code>Command</code> key on MacOS.
+                            Expressions sorrounded by <code>{}</code> are meant to express actions while items like <reference>this</reference> are meant to express the name of a button or menu item.
+                        </p>
+                    </div>
+                </blockquote>
+                <h2>File Management</h2>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Opening Files</h3>
+                        <p>
+                        Bind: <code>Contmand</code> + <code>O</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>File</reference> > <reference>Open</reference> or <reference>File Explorer</reference> > <code>{Double click on file}</code>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Opens a file explorer window to select a file to open,
+                            </li>
+                            <li>
+                                Opens the file in a new tab.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col">
+                        <h3>Saving Files</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>S</code> or <code>Contmand</code> + <code>Shift</code> + <code>S</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>File</reference> > <reference>Save</reference> or <reference>File Explorer</reference> > <code>{Right click on file}</code> > <reference>Save</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Saves the file in the current tab,
+                            </li>
+                            <li>
+                                If the file has not been saved before, opens a file explorer window to select a location to save the file.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Opening File Explorer</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>E</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>File</reference> > <reference>File Explorer</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Opens the file explorer.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col"></div>
+                </div>
+
+                <h2>Tabs</h2>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Creating New Tabs</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>T</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>File</reference> > <reference>New Tab</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Creates a new tab.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col">
+                        <h3>Closing Tabs</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>w</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>File</reference> > <reference>Close Tab</reference> or <code>{Press close button}</code>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Asks to save the file if it has been modified since the last save,
+                            </li>
+                            <li>
+                                Closes the current tab.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Reopen Last Closed Tab</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>Shift</code> + <code>T</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>File</reference> > <reference>Reopen Last Closed Tab</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Reopens the last closed tab.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <h2>Text Editing</h2>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h2>Copy and Pasting</h2>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>c</code> then <code>Contmand</code> + <code>v</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>Edit</reference> > <reference>Copy</reference> and <reference>Edit</reference> > <reference>Paste</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Copies the selected text to the clipboard,
+                            </li>
+                            <li>
+                                Pastes the text from the clipboard to the cursor location.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col">
+                        <h3>Undoing and Redoing</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>z</code> and <code>Contmand</code> + <code>Shift</code> + <code>z</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>Edit</reference> > <reference>Undo</reference> and <reference>Edit</reference> > <reference>Redo</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Undoes the last action,
+                            </li>
+                            <li>
+                                Redoes the last action.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Deleting Text</h3>
+                        <p>
+                            Bind: <code>Backspace</code> and <code>Delete</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>Edit</reference> > <reference>Delete</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Deletes the selected text.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col">
+                        <h3>Duplicating Text</h3>
+                        <p>
+                            Bind: <code>Option</code> + <code>Shift</code> + <code>Up</code> or <code>Option</code> + <code>Shift</code> + <code>Down</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>Edit</reference> > <reference>Duplicate Line Up</reference> and <reference>Edit</reference> > <reference>Duplicate Line Down</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Duplicates the selected text up or down.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Finding and Replacing Text</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>f</code>  + <code>Enter text to find</code> then <code>Use find/replace GUI to replace text (hover over buttons for more info)</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>Edit</reference> > <reference>Find</reference> and <reference>Edit</reference> > <reference>Replace</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Finds and replaces text.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col">
+                        <h3>Commenting and Uncommenting Text</h3>
+                        <p>
+                            Bind: <code>Contmand</code> + <code>/</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>Edit</reference> > <reference>Comment Line</reference> and <reference>Edit</reference> > <reference>Uncomment Line</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Comments or uncomments the selected line.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Indenting and Unindenting Text</h3>
+                        <p>
+                            Bind: <code>Tab</code> and <code>Shift</code> + <code>Tab</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>Edit</reference> > <reference>Indent Line</reference> and <reference>Edit</reference> > <reference>Unindent Line</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Indents or unindents the selected line or selection.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col"></div>
+                </div>
+                <br>
+                <h2>Using the Terminal</h2>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Opening the Terminal</h3>
+                        <p>
+                            Bind: <code>None</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>View</reference> > <reference>Show Terminal</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Opens the terminal.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="right-col">
+                        <h3>Closing the Terminal</h3>
+                        <p>
+                            Bind: <code>None</code>.
+                        </p>
+                        <p>
+                            GUI: <reference>View</reference> > <reference>Hide Terminal</reference>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Closes the terminal.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="dual-column-parent">
+                    <div class="left-col">
+                        <h3>Running Commands</h3>
+                        <p>
+                            Bind: <code>None</code>.
+                        </p>
+                        <p>
+                            GUI: Type command in terminal and press <code>Enter</code>.
+                        </p>
+                        <p>
+                            Behavior:
+                        </p>
+                        <ul>
+                            <li>
+                                Runs the command in the terminal.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <h2>
+                    <a href="./edit-themes.html">Next: Editing Themes</a> | <a href="./Installation.html">Previous: Installation</a> | <a href="./docs.html">Back to Overview</a>
+                </h2>
+            </div>
+            <div class="right"></div>
+        </div>
+        <br>
+    </body>
+</html>

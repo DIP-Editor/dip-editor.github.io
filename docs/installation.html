@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DIP Documentation
+        </title>
+        <link rel="stylesheet" href="../style/style.css" class="css">
+        <link rel="icon" href="../images/DIP.svg">
+    </head>
+    <body>
+        <div class="sticky-header">
+            <div class="sticky-header">
+                <div class="logo">
+                    <a href="../index.html">
+                        <svg class="logo">
+                            <image href="../images/DIP.svg" width=10vw height=10vh>
+                            </image>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navText">
+                    <a href="../index.html">
+                    Home
+                    </a>
+                    <a href="./docs.html">
+                    Docs
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="center-parent">
+            <div class="left"></div>
+            <div class="mid">
+                <h1 align="center">Installation</h1>
+                <br>
+                <h2>Application Executables</h2>
+                <br>
+                <p>Application Executables are created and uploaded to the <a href="https://github.com/DIP-Editor/DIP-dev/releases">releases</a> page on GitHub. There are three releases:</p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/DIP-Editor/DIP-dev/releases/latest-windows-build">
+                            <code>Latest Windows Build</code>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DIP-Editor/DIP-dev/releases/latest-linux-build">
+                            <code>Latest Linux Build</code>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DIP-Editor/DIP-dev/releases/latest-mac-build">
+                            <code>Latest Mac Build</code>
+                        </a>
+                    </li>
+                </ul>
+                <br>
+                <p>These can all be downloaded and run like native applications on their respective operating systems. They are also much smaller than the executable created on ones own machine, as they are stripped of all unnecessary files and libraries. These files were created using <a href="https://www.pyinstaller.org/">PyInstaller</a> and the files used to create these builds are as shown:</p>
+                <ul>
+                    <li>Windows:
+                        <br>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/DIP-Editor/DIP-dev/tree/master/.github/workflows/WindowsBuild.yaml">
+                                    <code>WindowsBuild.yaml</code>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/DIP-Editor/DIP-dev/tree/master/windows-DIP.spec">
+                                    <code>windows-DIP.spec</code>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>MacOS:
+                        <br>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/DIP-Editor/DIP-dev/tree/master/.github/workflows/MacBuild.yaml">
+                                    <code>MacBuild.yaml</code>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/DIP-Editor/DIP-dev/tree/master/DIP.spec">
+                                    <code>DIP.spec</code>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Linux:
+                        <br>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/DIP-Editor/DIP-dev/tree/master/.github/workflows/LinuxBuild.yaml">
+                                    <code>LinuxBuild.yaml</code>
+                                </a>
+                            </li>
+                            <li><a href="https://github.com/DIP-Editor/DIP-dev/tree/master/DIP.spec">
+                                <code>DIP.spec</code></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <h2>Application Source</h2>
+                <br>
+                <p>The application source be from either a git clone <a href="https://github.com/DIP-Editor/DIP-dev.git">here</a> or from a zip file <a href="https://github.com/DIP-Editor/DIP-dev/archive/refs/heads/main.zip">here</a>. Either way, the code is still runnable and usable. Once the source has been downloaded, use <code>pip install -r requirements.txt</code> to install all the dependencies. Then, run <code>python3 DIP.py</code> to start the application. If you would like to create an executable, use <code>pyinstaller DIP.spec</code> or <code>PyInstaller windows-DIP.spec</code> if you are a Windows user.</p>
+                <br>
+                <h2>
+                    <a href="./use-dip.html">Next: Using <code>DIP</code></a> | <a href="./overview.md">Back to Overview</a>
+                </h2>
+                <br>
+            </div>
+            <div class="right"></div>
+        </div>
+        <br>
+    </body>
+</html>
